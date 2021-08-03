@@ -2,7 +2,7 @@ import express, { Application, Request, Response, NextFunction } from 'express'
 import { CaseController, CaseProxy } from './data';
 import cases from './data/cases.json'
 
-const port = process.env.APP_PORT
+const port = process.env.APP_PORT ?? 5000
 const app: Application = express();
 
 export const countries = () => {

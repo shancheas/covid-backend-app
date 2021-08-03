@@ -13,7 +13,8 @@
     "format:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\" --config ./.prettierrc",
     "lint": "eslint \"src/**/*.ts\" \"test/**/*.ts\"",
     "lint:fix": "eslint \"src/**/*.ts\" \"test/**/*.ts\" --fix",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "@types/jest": "^26.0.24",
